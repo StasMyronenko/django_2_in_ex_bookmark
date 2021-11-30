@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-@ehbxz6=ene438#-unf6_t0jy3sp34drs0w(r#ohf#zf5w=h$5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1', '4445-176-38-147-44.ngrok.io', ]
 
 SITE_ID = 1
 
@@ -22,6 +22,7 @@ SITE_ID = 1
 
 INSTALLED_APPS = [
     'account',
+    'images',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -31,6 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'social_django',
+
+    'sorl.thumbnail'  # for photo preview; # загружает фото заданного размера для увеличения скорости загрузки
 ]
 
 MIDDLEWARE = [
