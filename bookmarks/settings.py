@@ -1,6 +1,8 @@
 from pathlib import Path
 import os
 
+from django.urls import reverse_lazy
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,6 +25,7 @@ SITE_ID = 1
 INSTALLED_APPS = [
     'account',
     'images',
+    'actions',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -153,3 +156,12 @@ SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 # Google log in
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '951291866769-bsuedg31r8id5njhenrc6p383ovunjnu.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+
+
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])
+}
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 0
