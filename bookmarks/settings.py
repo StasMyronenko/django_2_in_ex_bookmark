@@ -139,17 +139,17 @@ LOGOUT_URL = 'logout'
 # Email
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'mysitesatpython@gmail.com'
-EMAIL_HOST_PASSWORD = 'ForDjangoBlog'
+EMAIL_HOST_USER = 'YourEmail@gmail.com'
+EMAIL_HOST_PASSWORD = 'YourPassword'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 # FB log in
-SOCIAL_AUTH_FACEBOOK_KEY = '270269745062496'
-SOCIAL_AUTH_FACEBOOK_SECRET = '873d211bbb6ace63de488db38c41d447'
+SOCIAL_AUTH_FACEBOOK_KEY = '...'
+SOCIAL_AUTH_FACEBOOK_SECRET = '...'
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 
 
 # Google log in
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '951291866769-bsuedg31r8id5njhenrc6p383ovunjnu.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '...'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '...'
